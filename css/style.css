@@ -3,7 +3,9 @@
   margin: 0;
 }
 
-
+body{
+  font-family: 'Montserrat';
+}
 /* Styling av videon, 100% width och height så att den täcker hela fönstret. */
 #myVideo {
   position: fixed;
@@ -36,7 +38,7 @@ header {
   color: white;
 }
 
-.divebody{
+/*.divebody{
   box-sizing: border-box;
   background-image: url("../img/bakgrunddive.jpg");
   background-size: cover;
@@ -45,14 +47,24 @@ header {
   min-width: 100%;
   min-height: 100%;
 }
+*/
 
-.white{
+.bg1{
   background-color: white;
   opacity: 0.77;
-  height:100%;
-  border: 2px solid black;
+  height:100vh;
 }
 .why{
   z-index: 2;
   color:black;
+  font-size: 2.8rem;
+  text-align: center;
+  padding-left:2rem;
+}
+.glad{
+  height: 100%;
+  width: 60%;
+  margin-left: 9.5rem;
+  display:inline-block;
+  border: 2px solid black;
 }
