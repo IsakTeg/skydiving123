@@ -1,0 +1,58 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Styling av videon, 100% width och height så att den täcker hela fönstret. */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+header {
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  padding: 1.5rem 0.5rem;
+  border: 2px solid white;
+  color: white;
+  grid-column: 3/7;
+  z-index: 2;
+}
+
+.heading1 {
+  border: none;
+}
+#showText {
+  /*display: none;*/
+  opacity: 0;
+  transition: opacity 1s linear;
+}
+.lanktilldive{
+  text-decoration: none;
+  color: white;
+}
+
+.divebody{
+  box-sizing: border-box;
+  background-image: url("../img/bakgrunddive.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.white{
+  background-color: white;
+  opacity: 0.77;
+  height:100%;
+  border: 2px solid black;
+}
+.why{
+  z-index: 2;
+  color:black;
+}
