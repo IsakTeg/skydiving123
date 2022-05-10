@@ -73,7 +73,7 @@
 }
 /* Tillåter snappingen*/
 .palm {
-  grid-row: 3/4
+  grid-row: 3/4;
   scroll-snap-align: center;
 }
 .fun {
@@ -81,7 +81,7 @@
 }
 /* Tillåter snappingen*/
 .glad {
-  grid-row: 5/6
+  grid-row: 5/6;
   scroll-snap-align: center;
 }
 .fun{
