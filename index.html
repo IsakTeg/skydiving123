@@ -6,8 +6,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <title>Skydiving</title>
-    <script src="js/main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- så att länken fungerar utan js-->
     <noscript>
       <style>
       #showText{
@@ -16,8 +16,10 @@
       </style>
     </noscript>
   </head>
-  <body>
+  <!-- så att det går att targeta bara första sidans body i det delade css-dokumentet -->
+  <body class="body1">
     <div class="container">
+      <!-- länken till andra sidan -->
       <header class="heading1">
         <a href="dive.html">
          <h1 id="showText"><a href="dive.html" class="lanktilldive">Let's Dive Into It</a></h1>
@@ -28,5 +30,7 @@
      <source src="img/skydiving.mp4" type="video/mp4">
     </video>
    </div>
+   <!-- länkning till js dokumentet-->
+   <script src="js/main.js"></script>
   </body>
 </html>

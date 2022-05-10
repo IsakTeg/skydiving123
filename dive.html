@@ -2,18 +2,56 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Learn More</title>
+    <title>Why?</title>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" type="text/css" href="css/grid.css"/>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/main.js"></script>
+    <!-- så att menyn fortfarande fungerar utan js -->
+    <noscript>
+      <style>
+        nav #links {
+          width: 7rem;
+        }
+        .slide:nth-of-type(1) {
+          display: flex;
+        }
+        </style>
+    </noscript>
   </head>
-  <body class="divebody">
+  <body>
     <div class="container">
-      <header></header>
-          <h1 class="why">Why you should skydive</h1>
-          <img src="img/glad.jpg" alt="happy smileyface" class="glad">
+      <nav>
+        <!-- Menyn, måste ha inline styling här, utan denna fungerar inte menyn som den ska -->
+        <div id="links" style="width:0;">
+          <ul>
+            <li><a href="dive.html">Why?</a></li>
+            <li><a href="index.html">Startpage</a></li>
+          </ul>
+        </div>
+
+        <!-- Öppna/stäng meny-->
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+          <img src="img/icon.webp" alt="Hamburger menu icon" class="fa fa-bars">
+        </a>
+      </nav>
+      <!-- Allt innehåll på hemsidan -->
+      <h1 class="why snappy media">Why you should skydive:</h1>
+      <img src="img/glad.jpg" alt="happy smileyface" class="parachute media">
+
+      <h2 class="view media">The view is amazing</h2>
+      <img src="img/palm.jpg" alt="Diving onto Palm ilands" class="palm snappy media">
+
+      <p class="fun media">It's fun</p>
+      <img src="img/gladglad.jpg" alt="A person diving and looking happy" class="glad media snappy">
+
+      <img src="img/varning.webp" alt="Warning sign" class="varning media">
+      <a href="https://skydivingstl.com/blog/medical-reasons-not-to-skydive/" target="_blank" class="health snappy knapp media">Health risks</a>
+
+      <img src="img/boka.jpg" alt="Book your trip today" class="boka media">
+      <a href="https://skydive.se/bokning/" target="_blank" class="booking knapp media">Book your trip today</a>
     </div>
 
   </body>

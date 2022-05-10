@@ -6,6 +6,11 @@
 body{
   font-family: 'Montserrat';
 }
+
+/* Gör att det inte går att scrolla på index.html */
+.body1{
+  overflow: hidden;
+}
 /* Styling av videon, 100% width och height så att den täcker hela fönstret. */
 #myVideo {
   position: fixed;
@@ -14,57 +19,218 @@ body{
   min-width: 100%;
   min-height: 100%;
 }
+/* Styling av all header-text*/
 header {
   text-align: center;
+  top: 50%;
+  left: 50%;
   margin-bottom: 1rem;
-  margin-top: 2rem;
-  padding: 1.5rem 0.5rem;
+  align-self: center;
   border: 2px solid white;
   color: white;
-  grid-column: 3/7;
   z-index: 2;
 }
 
-.heading1 {
-  border: none;
-}
-#showText {
-  /*display: none;*/
-  opacity: 0;
-  transition: opacity 1s linear;
-}
+/* Placeringen av länken till dive.html */
 .lanktilldive{
+  top: 50%;
   text-decoration: none;
   color: white;
 }
-
-/*.divebody{
-  box-sizing: border-box;
-  background-image: url("../img/bakgrunddive.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  min-width: 100%;
-  min-height: 100%;
+.heading1 {
+  border: none;
 }
-*/
 
-.bg1{
-  background-color: white;
-  opacity: 0.77;
-  height:100vh;
+/* Styling och transition av menyn */
+#showText {
+  opacity: 0;
+  transition: opacity 1s linear;
 }
+
+/* Styling av själva hamburger-menyn*/
+nav {
+  position: absolute;
+  background-color: black;
+  opacity: 70%;
+}
+/* Styling av länkarna i hamburger-menyn*/
+nav #links {
+  position: fixed;
+  padding-top: 2.5rem;
+  width: 0px;
+  left: 0;
+  height: 100%;
+  /*grid-column: 1/3;
+  grid-row: 1/-1;*/
+  background-color: black;
+  opacity: 85%;
+  overflow-x: hidden;
+  z-index: 1;
+  transition: 500ms;
+}
+
+nav a {
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+  display: block;
+  opacity: 100%;
+}
+
+nav a:hover {
+  color: gray;
+  transition: 150ms linear;
+}
+
+nav > a.icon {
+  background: none;
+  color: white;
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+.fa{
+width:10%;
+height:10%;
+}
+
+/* Styling av allt innehåll på sidan */
 .why{
   z-index: 2;
   color:black;
   font-size: 2.8rem;
   text-align: center;
   padding-left:2rem;
+  align-self: center;
 }
-.glad{
-  height: 100%;
+.parachute{
+  height: 80%;
   width: 60%;
   margin-left: 9.5rem;
   display:inline-block;
   border: 2px solid black;
+  align-self: center;
+}
+
+.palm {
+width:75%;
+align-self: center;
+display:inline-block;
+border: 2px solid black;
+}
+
+.view{
+  color:black;
+  font-size: 2.8rem;
+  text-align: center;
+  padding-left:1rem;
+  align-self: center;
+}
+
+.glad{
+  width:75%;
+  align-self: center;
+  display:inline-block;
+  border: 2px solid black;
+  margin-left: 9.5rem;
+}
+
+.fun{
+  color:black;
+  font-size: 2.8rem;
+  text-align: center;
+  padding-left:1rem;
+  align-self: center;
+  font-weight: bold;
+}
+
+.boka{
+  height: 80%;
+  align-self: center;
+  display:inline-block;
+  border: 2px solid black;
+}
+
+.booking{
+ align-self: center;
+}
+
+.varning{
+  width:75%;
+  align-self: center;
+  display:inline-block;
+  margin-left: 2rem;
+}
+ /* Styling av alla knapparna som länkar externt */
+ .knapp{
+  background-color: rgb(78, 174, 231); /* blå */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  align-self: center;
+}
+.knapp {
+  background-color: #008CBA;
+  color: white;
+  border: 2px solid #008CBA;
+}
+
+.knapp:hover {
+  background-color: white;
+  color: black;
+}
+
+
+/* Koden som gör att scroll-snapping fungerar på sidan */
+html {
+  scroll-snap-type: y mandatory;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+}
+/* Classen som gör att snappingen centrerar objektet i center av skärmen */
+.snappy {
+  scroll-snap-align: center;
+}
+
+/* Mobilanpassningen */
+@media only screen and (max-width: 450px){
+  *{
+    margin: 0;
+  }
+  .parachute{
+    margin:0;
+    width:100%;
+  }
+  .why{
+    margin-bottom: 25vh;
+    margin-right: 20vw;
+  }
+  .glad{
+    margin:0;
+  }
+  .boka{
+    margin:0;
+    height:50%;
+  }
+  .view, .fun{
+    margin-bottom: 45vh;
+  }
+  .palm, .glad{
+  margin-top: 20vh;
+  margin-right:10vw;
+  width:120%;
+  }
+.boka, .varning{
+  margin-top: 25vh;
+}
+.booking{
+    margin-bottom: 35vh;
+}
 }
