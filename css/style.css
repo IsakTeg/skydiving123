@@ -102,55 +102,48 @@ height:10%;
   color:black;
   font-size: 2.8rem;
   text-align: center;
-  padding-left:2rem;
   align-self: center;
 }
 .parachute{
-  height: 80%;
-  width: 60%;
-  margin-left: 9.5rem;
   display:inline-block;
   border: 2px solid black;
   align-self: center;
 }
 
 .palm {
-width:75%;
 align-self: center;
 display:inline-block;
 border: 2px solid black;
+width:100%;
 }
 
 .view{
   color:black;
   font-size: 2.8rem;
   text-align: center;
-  padding-left:1rem;
   align-self: center;
 }
 
 .glad{
-  width:75%;
+  width:100%;
   align-self: center;
   display:inline-block;
   border: 2px solid black;
-  margin-left: 9.5rem;
 }
 
 .fun{
   color:black;
   font-size: 2.8rem;
   text-align: center;
-  padding-left:1rem;
   align-self: center;
   font-weight: bold;
 }
 
 .boka{
-  height: 80%;
   align-self: center;
   display:inline-block;
   border: 2px solid black;
+  width:100%;
 }
 
 .booking{
@@ -158,10 +151,8 @@ border: 2px solid black;
 }
 
 .varning{
-  width:75%;
   align-self: center;
   display:inline-block;
-  margin-left: 2rem;
 }
  /* Styling av alla knapparna som länkar externt */
  .knapp{
@@ -174,7 +165,8 @@ border: 2px solid black;
   font-size: 16px;
   transition-duration: 0.4s;
   cursor: pointer;
-  align-self: center;
+  align-self: baseline;
+  margin-top: 1.5rem;
 }
 .knapp {
   background-color: #008CBA;
@@ -201,36 +193,13 @@ html {
 
 /* Mobilanpassningen */
 @media only screen and (max-width: 450px){
-  *{
-    margin: 0;
-  }
   .parachute{
-    margin:0;
+    width:0;
+  }
+  .palm{
+    height:100%;
+  }
+  .varning{
     width:100%;
-  }
-  .why{
-    margin-bottom: 25vh;
-    margin-right: 20vw;
-  }
-  .glad{
-    margin:0;
-  }
-  .boka{
-    margin:0;
-    height:50%;
-  }
-  .view, .fun{
-    margin-bottom: 45vh;
-  }
-  .palm, .glad{
-  margin-top: 20vh;
-  margin-right:10vw;
-  width:120%;
-  }
-.boka, .varning{
-  margin-top: 25vh;
-}
-.booking{
-    margin-bottom: 35vh;
 }
 }
