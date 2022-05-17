@@ -204,4 +204,7 @@ html {
 html {
   scroll-snap-type: none;
 }
+#showText{
+  opacity: 1;
+}
 }
