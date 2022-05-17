@@ -204,6 +204,7 @@ html {
 html {
   scroll-snap-type: none;
 }
+/* ifall videon inte kan spelas på mobila enheter*/
 #showText{
   opacity: 1;
 }
