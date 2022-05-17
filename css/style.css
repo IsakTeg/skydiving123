@@ -202,4 +202,7 @@ html {
   .varning{
     width:100%;
 }
+html {
+  scroll-snap-type: none;
+}
 }
