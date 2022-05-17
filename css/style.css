@@ -153,6 +153,7 @@ width:100%;
 .varning{
   align-self: center;
   display:inline-block;
+  width: 100%;
 }
  /* Styling av alla knapparna som länkar externt */
  .knapp{
