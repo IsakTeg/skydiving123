@@ -37,30 +37,30 @@
 
 .glad{
   grid-column: 6/8;
-  grid-row: 7/8;
+  grid-row: 6/7;
 }
 
 .fun{
   grid-column: 2/4;
-  grid-row: 7/8;
+  grid-row: 6/7;
 }
 
 .varning{
   grid-column: 6/8;
-  grid-row:9/10;
+  grid-row:8/9;
 }
 .health{
   grid-column: 6/8;
-  grid-row:10/11;
+  grid-row:9/10;
 }
 
 .boka{
   grid-column: 2/4;
-  grid-row: 9/10;
+  grid-row: 8/9;
 }
 .booking{
   grid-column: 2/4;
-  grid-row:10/11;
+  grid-row:9/10;
 }
 
 /* Mobilanpassningen*/
