@@ -184,8 +184,6 @@ width:100%;
 /* Koden som gör att scroll-snapping fungerar på sidan */
 html {
   scroll-snap-type: y mandatory;
-  scroll-snap-type: mandatory;
-  scroll-snap-points-y: repeat(100vh);
 }
 /* Classen som gör att snappingen centrerar objektet i center av skärmen */
 .snappy {
