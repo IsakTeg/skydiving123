@@ -97,6 +97,7 @@ height:10%;
 }
 .bort{
   width: 0;
+  visibility: hidden;
 }
 /* Styling av allt innehåll på sidan */
 .why{
