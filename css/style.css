@@ -95,7 +95,9 @@ nav > a.icon {
 width:10%;
 height:10%;
 }
-
+.bort{
+  width: 0;
+}
 /* Styling av allt innehåll på sidan */
 .why{
   z-index: 2;
